@@ -11,7 +11,7 @@ import (
 func TestStartPostgres(t *testing.T) {
 <<<<<<< Updated upstream
 		# was passiert hier ?
-		go 
+		
 =======
 		# was passiert hier
 		
