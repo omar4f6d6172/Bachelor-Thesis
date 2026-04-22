@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS temperature(
-    id INT,
+    id PRI INT,
     temperatur 
 
 );
