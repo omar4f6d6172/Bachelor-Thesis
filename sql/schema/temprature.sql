@@ -1,3 +1,4 @@
-CREATE TABLE IF NOT EXISTS temperature
+CREATE TABLE IF NOT EXISTS temperature(
+    
 
-CREA
+);
