@@ -25,4 +25,4 @@ func TestStartPostgres(t *testing.T) {
 }
 
 
-func te
+func TestSchema
