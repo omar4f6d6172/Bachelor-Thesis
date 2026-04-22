@@ -16,8 +16,8 @@ func StartPostgres(ctx context.Context, t testing.TB) (*postgres.PostgresContain
 		"postgres:16-alpine",
 		postgres.WithInitScripts(filepath.Join("..", "..", "sql", "schema", "temprature.sql")),
 		postgres.WithDatabase("postgres"),
-		postgres.WithUsername("user"),
-		postgres.WithPassword("password"),
+		postgres.WithUsername("postgres"),
+		postgres.WithPassword("postgres"),
 		postgres.BasicWaitStrategies(),
 	)
 	if err != nil {
