@@ -1,4 +1,4 @@
-.PHONY: sync auto-sync
+.PHONY: sync auto-sync test-db
 
 MSG ?= sync
 INTERVAL ?= 5
@@ -24,3 +24,6 @@ auto-sync:
 		git push || echo "push failed, will retry"; \
 		sleep $(INTERVAL); \
 	done
+
+test-db:
+	go test -v -run TestStartPostgres ./internal/testutil/...
