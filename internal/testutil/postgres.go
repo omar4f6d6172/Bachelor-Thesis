@@ -20,7 +20,6 @@ func startPostgres() {
 	postgresContainer, err := postgres.Run(ctx,
 		"postgres:16-alpine",
 		postgres.WithInitScripts(filepath.Join("testdata", "init-user-db.sh")),
-
 		postgres.WithDatabase(dbName),
 		postgres.WithUsername(dbUser),
 		postgres.WithPassword(dbPassword),
