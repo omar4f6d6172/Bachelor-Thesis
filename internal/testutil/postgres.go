@@ -2,6 +2,7 @@ package testutil
 
 import (
 	"context"
+	"path/filepath"
 	"testing"
 
 	"github.com/testcontainers/testcontainers-go"
@@ -14,7 +15,7 @@ func StartPostgres(ctx context.Context, t testing.TB) (*postgres.PostgresContain
 	container, err := postgres.Run(ctx,
 		"postgres:16-alpine",
 		postgres.WithInitScripts(filepath.Join("..", "..", "sql", "schema", "temprature.sql")),
-   		postgres.WithDatabase("termperature-db"),
+		postgres.WithDatabase("termperature-db"),
 		postgres.WithUsername("user"),
 		postgres.WithPassword("password"),
 		postgres.BasicWaitStrategies(),
