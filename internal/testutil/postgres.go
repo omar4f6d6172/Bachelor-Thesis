@@ -13,7 +13,7 @@ import (
 func startPostgres() {
 	ctx := context.Background()
 
-	dbName := "users"
+	dbName := "termperature-db"
 	dbUser := "user"
 	dbPassword := "password"
 
