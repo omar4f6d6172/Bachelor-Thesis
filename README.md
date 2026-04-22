@@ -13,8 +13,8 @@ UART to MQTT
 2. Throwing this data in queue of MQTT
 
 Dashboard
-1. Grafana Installing
-2. Grafana with Postgress Connecting
+1. Nextjs Installing
+2. Connect to Postgres
 3. Creating Dashboards
 
 type struct{
@@ -22,3 +22,11 @@ type struct{
     device_ID int 
 
 }Sensor_t;
+
+Tests
+1. Test Container
+2. Test if migrations work
+3. Test Worker and Test Producer
+4. Test Producer temprature Data
+5. Test Consumer temprature Data
+6. Create Datasources and visualization automatically
