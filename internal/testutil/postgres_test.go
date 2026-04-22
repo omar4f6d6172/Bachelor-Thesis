@@ -24,5 +24,6 @@ func TestStartPostgres(t *testing.T) {
 	}
 }
 
+func TestPostgresSchema(t *testing.T) {
 
-func TestPostgresSchema()
+}
