@@ -1,3 +1,3 @@
 CREATE TABLE IF NOT EXISTS temperature
 
-
+CREA
